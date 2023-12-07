@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixelz Administration</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&amp;family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+  </head>
+  <body>
+    <div class="split left"></div>
+    <div class="login-section split right" id="login-page">
+      <div class="icon">
+        <img
+          src="/image/microsoft-g7bee256a9_1280.png"
+          alt="Pixelz"
+        />
+      </div>
+
+      <div class="login">
+        <div class="sign-up">
+          <p>Don't have an account? <a onclick="signUpPage()">Sign Up</a></p>
+        </div>
+        <h1 class="login-head">Login</h1>
+        <form action="">
+          <div class="input-box">
+            <p id="" class="invalid-alert hidden">*Your email is invalid!</p>
+            <p id="" class="empty-email hidden">*Please enter your email!</p>
+            <label for="login-email">E-mail</label>
+            <input type="email" id="login-email" name="email" />
+            <br />
+          </div>
+          <div class="input-box">
+            <p id="" class="empty-password hidden">*Please enter your password!</p>
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" name="password" /><br />
+          </div>
+        </form>
+        <div class="forgot-link">
+          <a href="" class="forgot">Forgot?</a><br />
+        </div>
+        <div id="unable-to-login" class="incorrect-alert hidden">
+            Unable to login. Please make sure your email and password are correct, and that your account has been activated.
+        </div>
+        <div>
+          <button type="submit" class="btn-continue" id="btn-login" onclick="login()">Continue</button>
+        </div>
+        <div>
+          <button type="submit" class="btn-google">
+            <img src="/image/icons8-google-32.png"/> Login with google
+          </button>
+        </div>
+      </div>
+    </div>
+      <!-- end login form -->
+
+      <!-- Sign up form -->
+      <div class="login-section split right hidden" id="sign-up-page">
+        <div class="icon">
+          <img
+            src="/image/microsoft-g7bee256a9_1280.png"
+            alt="Pixelz"
+          />
+        </div>
+  
+        <div class="login">
+          <div class="sign-up">
+            <p>Already have account? <a href="">Login</a></p>
+          </div>
+          <h1 class="login-head">Sign up</h1>
+          <form id="sign-up-form" action="">
+            <div class="input-box">
+                <p id="" class="invalid-alert hidden">*Your email is invalid!</p>
+                <p id="" class="empty-email hidden">*Please enter your email!</p>
+              <label for="sign-up-email">E-mail</label>
+              <input type="email" id="sign-up-email" name="email" />
+              <br />
+            </div>
+            <div class="input-box">
+                <p id="" class="empty-password hidden">*Please enter your password!</p>
+              <label for="sign-up-password">Password</label>
+              <input type="password" id="sign-up-password" name="password" /><br />
+            </div>
+          </form>
+          <div id="already-existed" class="hidden">
+            <p>*This email is already existed, please try another email.</p>
+          </div>
+          <div>
+            <button type="submit" class="btn-continue btn-sign-up" onclick="signUp()">Sign up</button>
+          </div>
+        </div>
+        <div id="sign-up-success">
+        </div>
+        </div>
+      <!-- end sign up form -->
+
+      <!-- Logged in interface -->
+      <div class="login-section split right hidden" id="logged-page">
+        <div class="icon">
+          <img
+            src="/image/microsoft-g7bee256a9_1280.png"
+            alt="Pixelz"
+          />
+        </div>
+        <div id="logged-in">
+        </div>
+        <div>
+            <button type="submit" id="btn-log-out" onclick="logOut()">log-out</button>
+        </div>
+      </div>
+      <!-- End interface -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,265 @@
+/* reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    height: 100%;
+    margin: auto;
+    width: 960px;
+}
+
+body {
+    font-family: "DM Sans", Helvetica, Arial, sans-serif !important;
+    color: #161c27;
+    position: relative;
+    height: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+}
+
+a {
+    color: black;
+}
+
+.split {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    background-image: url('https://allthepages.org/wp-content/uploads/2019/08/2017-favorites-sm-3.jpg');
+    left: 0;
+    top: 0;
+    width: calc(45% - 50px);
+    height: 100%;
+    background-size: auto 100%;
+    background-position: unset;
+    box-sizing: border-box;
+    object-fit: fill;
+}
+
+.right {
+    width: 350px;
+    left: 45%;
+    top: 0;
+    right: unset;
+    margin: 0 auto;
+}
+
+.icon {
+    width: 150px;
+    margin: 20px 0 40px;
+}
+
+.sign-up {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.sign-up a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btn-sign-up {
+    margin-top: 20px;
+}
+
+.login-section h1 {
+    color: #333;
+    font-weight: 200;
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    background-color: #fff;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    padding-top: 7px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 4px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    transition-duration: 0.2s;
+}
+
+.input-box label {
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0;
+    display: block;
+    cursor: pointer;
+}
+
+.input-box input {
+    margin: 0;
+    margin-bottom: 0;
+    line-height: 26px;
+    height: 20px;
+    font-size: 17px;
+    box-shadow: none;
+    display: inline-block;
+}
+
+.forgot {
+    float: right;
+}
+
+.forgot-link {
+    margin-bottom: 20px;
+}
+
+.btn-continue {
+    padding: 15px 20px 14px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #767676;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    text-shadow: none;
+    letter-spacing: 2px;
+    width: auto;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.btn-continue:hover{
+    background-color: #333;
+}
+
+.btn-google {
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid #DBDBDB;
+    padding: 0 15px 0 5px;
+    color: #767676;
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.input-box p {
+    color: red;
+}
+
+.incorrect-alert {
+    background-color: rgba(255, 0, 0, 0.192);
+    color: red;
+    width: 200px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-weight: 500;
+}
+
+#logged-in{
+    letter-spacing: 1px;
+}
+
+#logged-in h1{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#logged-in p{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+#btn-log-out{
+    margin-left: 250px;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid #DBDBDB;
+    padding: 0 15px;
+    color: #767676;
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    height: 35px;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px){
+    .left {
+        background-image: url('https://login.pixelz.com/Content/images/login-bg2.jpg');
+        position: absolute;
+        width: 100%;
+        height: 180px;
+        background-size: cover;
+        background-position: 0 -80px;
+        display: block;
+    }
+    .right {
+        left: 0;
+        top: 180px;
+        right: 0;
+    }
+}
+
+@media (max-width: 768px){
+    .left {
+        display: none;
+    }
+    .right {
+        top: 0;
+    }
+}
+
+@media (min-width: 740px){
+
+}
+
+@media (min-width: 480px){
+    
+}
+
+.hidden {
+    display: none;
+}

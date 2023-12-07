@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../../Desktop/React"
+	},
+	{
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "pixelzLoginWebpage"
+  }
+}
